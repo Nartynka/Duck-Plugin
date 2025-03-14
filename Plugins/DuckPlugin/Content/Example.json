@@ -1,0 +1,28 @@
+{
+	"Ducks": [
+		{
+			"name": "Bartek",
+			"color": "FF678DFF"
+		},
+		{
+			"name": "Dewey",
+			"color": "DFFF00FF"
+		},
+		{
+			"name": "Howard",
+			"color": "FF8200FF"
+		},
+		{
+			"name": "Donald",
+			"color": "4CB500FF"
+		},
+		{
+			"name": "Daisy",
+			"color": "FF0054FF"
+		},
+		{
+			"name": "Adam",
+			"color": "414093FF"
+		}
+	]
+}

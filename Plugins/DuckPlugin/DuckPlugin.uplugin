@@ -1,0 +1,29 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "DuckPlugin",
+	"Description": "*Quack*",
+	"Category": "Ducks",
+	"CreatedBy": "Nartyna",
+	"CreatedByURL": "https://youtu.be/xvFZjo5PgG0?si=ZG0ESOCAMKWRCgcy",
+	"DocsURL": "https://youtu.be/xvFZjo5PgG0?si=ZG0ESOCAMKWRCgcy",
+	"MarketplaceURL": "https://youtu.be/xvFZjo5PgG0?si=ZG0ESOCAMKWRCgcy",
+	"SupportURL": "https://youtu.be/xvFZjo5PgG0?si=ZG0ESOCAMKWRCgcy",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "DuckPlugin",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "DuckPluginEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}
