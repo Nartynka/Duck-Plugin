@@ -7,8 +7,8 @@
 void FDuckPluginModule::StartupModule()
 {
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module
-	MyAssetAssetTypeActions = MakeShared<FMyAssetAssetTypeActions>();
-	FAssetToolsModule::GetModule().Get().RegisterAssetTypeActions(MyAssetAssetTypeActions.ToSharedRef());
+	DuckListAssetTypeActions = MakeShared<FDuckListAssetTypeActions>();
+	FAssetToolsModule::GetModule().Get().RegisterAssetTypeActions(DuckListAssetTypeActions.ToSharedRef());
 }
 
 void FDuckPluginModule::ShutdownModule()
@@ -17,7 +17,7 @@ void FDuckPluginModule::ShutdownModule()
 	// we call this function before unloading the module.
 	if (!FModuleManager::Get().IsModuleLoaded("AssetTools")) 
 		return;
-	FAssetToolsModule::GetModule().Get().UnregisterAssetTypeActions(MyAssetAssetTypeActions.ToSharedRef());
+	FAssetToolsModule::GetModule().Get().UnregisterAssetTypeActions(DuckListAssetTypeActions.ToSharedRef());
 
 }
 #undef LOCTEXT_NAMESPACE

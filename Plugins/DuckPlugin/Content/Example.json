@@ -1,7 +1,7 @@
 {
 	"Ducks": [
 		{
-			"name": "Bartek",
+			"name": "Bobby",
 			"color": "FF678DFF"
 		},
 		{
@@ -21,8 +21,12 @@
 			"color": "FF0054FF"
 		},
 		{
-			"name": "Adam",
-			"color": "414093FF"
+			"name": "Fluffy",
+			"color": "3071AAFF"
+		},
+		{
+			"name": "Ducky",
+			"color": "60B18CFF"
 		}
 	]
 }

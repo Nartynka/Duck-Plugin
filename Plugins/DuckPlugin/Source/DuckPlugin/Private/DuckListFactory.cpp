@@ -1,23 +1,23 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "MyAssetFactory.h"
-#include "MyAsset.h"
+#include "DuckListFactory.h"
+#include "DuckList.h"
 
-UMyAssetFactory::UMyAssetFactory()
+UDuckListFactory::UDuckListFactory()
 {
 	//Formats.Add("JSON;JSON File (syn Jasona)");
-	SupportedClass = UMyAsset::StaticClass();
+	SupportedClass = UDuckList::StaticClass();
 	bCreateNew = true;
 	bEditAfterNew = true;
 	//bEditorImport = true;
 	//UE_LOG(LogTemp, Warning, TEXT("Placki"));
 }
 
-UObject* UMyAssetFactory::FactoryCreateNew(UClass* InClass, UObject* InParent, FName InName, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn, FName CallingContext)
+UObject* UDuckListFactory::FactoryCreateNew(UClass* InClass, UObject* InParent, FName InName, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn, FName CallingContext)
 {
-	check(InClass->IsChildOf(UMyAsset::StaticClass()));
-	UMyAsset* CreatedAsset = NewObject<UMyAsset>(InParent, InClass, InName, Flags);
+	check(InClass->IsChildOf(UDuckList::StaticClass()));
+	UDuckList* CreatedAsset = NewObject<UDuckList>(InParent, InClass, InName, Flags);
 	return CreatedAsset;
 }
 
@@ -29,7 +29,7 @@ UObject* UMyAssetFactory::FactoryCreateNew(UClass* InClass, UObject* InParent, F
 //	return CreatedFile;
 //}
 
-bool UMyAssetFactory::ShouldShowInNewMenu() const
+bool UDuckListFactory::ShouldShowInNewMenu() const
 {
 	return true;
 }

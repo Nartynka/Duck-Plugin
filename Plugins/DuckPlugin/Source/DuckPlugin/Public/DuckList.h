@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "MyAsset.generated.h"
+#include "DuckList.generated.h"
 
 USTRUCT()
 struct FDuckling 
@@ -19,7 +19,7 @@ struct FDuckling
 
 
 UCLASS(AutoExpandCategories = ("AllDucks"))
-class DUCKPLUGIN_API UMyAsset : public UObject
+class DUCKPLUGIN_API UDuckList : public UObject
 {
 	GENERATED_BODY()
 
@@ -30,7 +30,7 @@ public:
 	FString FilePath;
 #endif
 
-	UMyAsset();
+	UDuckList();
 
 	UPROPERTY(EditAnywhere)
 	FString Ducks;

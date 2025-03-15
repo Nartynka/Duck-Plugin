@@ -7,7 +7,7 @@
 /**
  * 
  */
-class DUCKPLUGIN_API FMyAssetAssetTypeActions : public FAssetTypeActions_Base
+class DUCKPLUGIN_API FDuckListAssetTypeActions : public FAssetTypeActions_Base
 {
 public:
 	UClass* GetSupportedClass() const override;

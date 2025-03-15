@@ -3,7 +3,7 @@
 
 #include "Ducks.h"
 #include "Duck.h"
-#include "MyAsset.h"
+#include "DuckList.h"
 
 // Sets default values
 ADucks::ADucks()

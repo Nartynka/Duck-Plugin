@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
-#include "MyAssetAssetTypeActions.h"
+#include "DuckListAssetTypeActions.h"
 
 class FDuckPluginModule : public IModuleInterface
 {
@@ -14,5 +14,5 @@ public:
 	virtual void StartupModule() override;
 	virtual void ShutdownModule() override;
 private:
-	TSharedPtr<FMyAssetAssetTypeActions> MyAssetAssetTypeActions;
+	TSharedPtr<FDuckListAssetTypeActions> DuckListAssetTypeActions;
 };

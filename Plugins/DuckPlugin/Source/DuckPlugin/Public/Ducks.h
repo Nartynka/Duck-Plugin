@@ -22,7 +22,7 @@ public:
 	ADucks();
 
 	UPROPERTY(EditAnywhere, Category = "Duck List")
-	class UMyAsset* DuckList;
+	class UDuckList* DuckList;
 	
 	UFUNCTION(CallInEditor, Category = "Ducks")
 	void CreateDucks();	

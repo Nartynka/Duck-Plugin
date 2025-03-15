@@ -1,12 +1,12 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "MyAsset.h"
+#include "DuckList.h"
 #include "HAL/PlatformFileManager.h"
 #include "Misc/FileHelper.h"
 
 #include "Serialization/JsonSerializer.h"
 
-UMyAsset::UMyAsset()
+UDuckList::UDuckList()
 {
 	if (FilePath.IsEmpty())
 		FilePath = FPaths::ProjectPluginsDir() + "DuckPlugin/Content/Example.json";
@@ -14,7 +14,7 @@ UMyAsset::UMyAsset()
 	ReadJson();
 }
 
-void UMyAsset::Read()
+void UDuckList::Read()
 {
 	if (!FilePath.IsEmpty() && !FPlatformFileManager::Get().GetPlatformFile().FileExists(*FilePath))
 	{
@@ -31,12 +31,12 @@ void UMyAsset::Read()
 	Ducks = OutString;
 }
 
-//void UMyAsset::Write()
+//void UDuckList::Write()
 //{
 //	FFileHelper::SaveStringToFile(Ducks, *FilePath);
 //}
 
-void UMyAsset::ReadJson()
+void UDuckList::ReadJson()
 {
 	AllDucks.Empty();
 	Read();
@@ -63,7 +63,7 @@ void UMyAsset::ReadJson()
 	}
 }
 
-void UMyAsset::WriteJson()
+void UDuckList::WriteJson()
 {
 	TArray<TSharedPtr<FJsonValue>> ObjArray;
 	for (int i = 0; i < AllDucks.Num(); i++)
